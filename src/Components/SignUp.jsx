@@ -17,7 +17,7 @@ export default function SignUp() {
         e.preventDefault();
         
         try {
-            const { data } = await axios.post("http://localhost:5000/api/v3/register", {
+            const { data } = await axios.post("https://bytestudy-yx6o.onrender.com/api/v3/register", {
                 name: name,
                 email: email,
                 username: username,

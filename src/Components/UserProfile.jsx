@@ -11,7 +11,6 @@ export default function UserProfile() {
 
     const handleMyCart = () => {
         if (notesCart.length === 0 && questionCart.length === 0 && expCart.length === 0) {
-            // alert('No saved Items');
             toast.warn('No saved Items',{
                 autoClose:2000,
             })

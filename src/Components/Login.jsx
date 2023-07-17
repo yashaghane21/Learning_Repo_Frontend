@@ -14,7 +14,8 @@ export default function SignUp() {
     const handlesubmit = async (e) => {
         e.preventDefault();
 
-        try { const { data } = await axios.post("http://localhost:5000/api/v3/login", {
+        try {
+            const { data } = await axios.post("https://bytestudy-yx6o.onrender.com/api/v3/login", {
 
         email: email,
         password: password,

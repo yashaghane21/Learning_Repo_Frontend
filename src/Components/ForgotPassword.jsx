@@ -12,7 +12,7 @@ export default function ForgotPassword() {
     const handlesubmit = async (e) => {
         e.preventDefault();
         if (newpassword === ConfPassword){
-        const { data } = await axios.put("http://localhost:5000/api/v3/fpass", {
+            const { data } = await axios.put("https://bytestudy-yx6o.onrender.com/api/v3/fpass", {
 
             email: email,
 

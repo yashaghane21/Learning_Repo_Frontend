@@ -9,7 +9,7 @@ export default function Semesters() {
     const [loader,setLoader]=useState()
     const getSem = async () => {
         try {
-            const response = await axios.get(`http://localhost:5000/api/v1/sem/${id.id}`);
+            const response = await axios.get(`https://bytestudy-yx6o.onrender.com/api/v1/sem/${id.id}`);
             setSem(response.data);
             console.log(response.data);
         } catch (error) {

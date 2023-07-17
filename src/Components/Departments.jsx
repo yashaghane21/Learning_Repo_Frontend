@@ -12,7 +12,7 @@ export default function Departments() {
   const [loader, setLoader] = useState(false)
   const fetchDepartments = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/v2/all-dep");
+      const response = await axios.get("https://bytestudy-yx6o.onrender.com/api/v2/all-dep");
       setDepartments(response.data);
       console.log(response.data);
     } catch (error) {
