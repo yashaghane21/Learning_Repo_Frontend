@@ -1,8 +1,8 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import './App.css'
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import Home from "./Components/Home"
 import About from './Components/About'
 import Contact from './Components/Contact'
@@ -16,14 +16,14 @@ import { Stprovider } from './Components/StudyContext'
 import Layout from './Components/Layout'
 import Subjects from "./Components/Subjects"
 import Notes from './Components/Notes'
-import ForgotPassword from './Components/ForgotPassword';
-import Options from './Components/Options';
-import QuestionP from './Components/QustionP';
-import Experiments from './Components/Experiments';
-import { Authprovider } from './Components/Authcontext';
-import UserProfile from './Components/UserProfile';
+import ForgotPassword from './Components/ForgotPassword'
+import Options from './Components/Options'
+import QuestionP from './Components/QustionP'
+import Experiments from './Components/Experiments'
+import { Authprovider } from './Components/Authcontext'
+import UserProfile from './Components/UserProfile'
 import { CartProvider } from './Components/CartContext'
-import MyCart from './Components/MyCart';
+import MyCart from './Components/MyCart'
 import NotesCart from './Components/NotesCart'
 import QuestionPCart from './Components/QuestionPCart'
 import ExpCart from './Components/ExpCart'
