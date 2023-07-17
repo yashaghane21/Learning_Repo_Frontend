@@ -1,4 +1,3 @@
-import img1 from '../Images/notes-img.jpg'
 import img2 from '../Images/notesImg.png'
 import img3 from '../Images/questionPImg.png'
 import img4 from '../Images/experimentsImg.png'
