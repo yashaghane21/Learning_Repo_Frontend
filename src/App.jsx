@@ -23,10 +23,10 @@ import Experiments from './Components/Experiments'
 import { Authprovider } from './Components/Authcontext'
 import UserProfile from './Components/UserProfile'
 import { CartProvider } from './Components/CartContext'
-import MyCart from './Components/MyCart'
 import NotesCart from './Components/NotesCart'
 import QuestionPCart from './Components/QuestionPCart'
 import ExpCart from './Components/ExpCart'
+import MyCart from './Components/MyCart'
 function App() {
   return (
     <>
