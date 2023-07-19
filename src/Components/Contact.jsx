@@ -1,5 +1,5 @@
 import React from 'react'
-import img1 from '../Images/Contact.png'
+import img1 from '../Images/contact.png'
 import { useNavigate } from 'react-router-dom'
 import {toast } from 'react-toastify'
 function Contact() {
