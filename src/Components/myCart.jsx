@@ -3,7 +3,7 @@ import img3 from '../Images/questionPImg.png'
 import img4 from '../Images/experimentsImg.png'
 import { useNavigate } from 'react-router-dom'
 import { useCart } from './CartContext'
-import {toast} from 'react-toastify'
+import {toast} from 'react-toastify';
 export default function MyCart(){
     const { notesCart, questionCart, expCart } = useCart()
     const navigate=useNavigate()
