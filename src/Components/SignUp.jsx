@@ -12,12 +12,12 @@ export default function SignUp() {
     const [password, setPassword] = useState("")
     const [cpass, setConfPassword] = useState("")
     const navigate = useNavigate();
-
+    const server = import.meta.env.VITE_SERVER; 
     const handlesubmit = async (e) => {
         e.preventDefault();
         
         try {
-            const { data } = await axios.post("https://bytestudy-yx6o.onrender.com/api/v3/register", {
+            const { data } = await axios.post(`${server}/api/v3/register`, {
                 name: name,
                 email: email,
                 username: username,

@@ -14,7 +14,7 @@ export default function QuestionP() {
 
     const fetchnotes = async () => {
         try {
-            const response = await axios.get(`https://bytestudy-yx6o.onrender.com/api/v1/get-Qp/${subid.id}`);
+            const response = await axios.get(`${server}/api/v1/get-Qp/${subid.id}`);
             setqp(response.data);
             console.log(response.data);
         } catch (error) {

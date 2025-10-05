@@ -9,7 +9,7 @@ export default function Departments() {
     const [loader,setLoader]=useState(false)
     const fetchsub = async () => {
         try {
-            const response = await axios.get(`https://bytestudy-yx6o.onrender.com/api/v1/get-sub/${semid.id}`);
+            const response = await axios.get(`${server}/api/v1/get-sub/${semid.id}`);
             setsub(response.data);
             console.log(response.data);
         } catch (error) {

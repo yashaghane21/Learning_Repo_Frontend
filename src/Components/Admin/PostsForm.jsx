@@ -17,10 +17,11 @@ export default function PostsForm() {
     const [name, setname] = useState("")
     const [link, setlink] = useState("")
     const { posts } = PostHook();
+    const server = import.meta.env.VITE_REACT_APP_SERVER_URL;
 
     const allDep = async () => {
         try {
-            const response = await axios.get('https://bytestudy-yx6o.onrender.com/api/v2/all-dep');
+            const response = await axios.get(`${server}/api/v2/all-dep`);
             setDep(response.data);
             console.log(response.data);
         } catch (error) {
@@ -42,7 +43,7 @@ export default function PostsForm() {
     };
     const allSem = async () => {
         try {
-            const response = await axios.get(`https://bytestudy-yx6o.onrender.com/api/v1/sem/${selectedDep}`);
+            const response = await axios.get(`${server}/api/v1/sem/${selectedDep}`);
             setSem(response.data);
             console.log(response.data);
         } catch (error) {
@@ -52,7 +53,7 @@ export default function PostsForm() {
 
     const allsub = async () => {
         try {
-            const response = await axios.get(`https://bytestudy-yx6o.onrender.com/api/v1/get-sub/${selectedSem}`);
+            const response = await axios.get(`${server}/api/v1/get-sub/${selectedSem}`);
             setsubject(response.data);
             console.log(response.data);
         } catch (error) {
@@ -68,7 +69,7 @@ export default function PostsForm() {
                 "name": name,
                 "link": link
             }
-            const { data } = await axios.post(`https://bytestudy-yx6o.onrender.com/api/v1/create-${posts}`, {
+            const { data } = await axios.post(`${server}/api/v1/create-${posts}`, {
                 name: myData.name,
                 link: myData.link,
                 subject: selectedSub

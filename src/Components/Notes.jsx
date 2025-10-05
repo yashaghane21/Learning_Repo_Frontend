@@ -17,7 +17,7 @@ export default function Notes() {
 
     const fetchnotes = async () => {
         try {
-            const response = await axios.get(`https://bytestudy-yx6o.onrender.com/api/v1/get-notes/${subid.id}`);
+            const response = await axios.get(`${server}/api/v1/get-notes/${subid.id}`);
             setnotes(response.data);
             console.log(response.data);
         } catch (error) {

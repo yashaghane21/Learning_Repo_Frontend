@@ -8,11 +8,11 @@ export default function ForgotPassword() {
     const [email, setemail] = useState("")
     const [newpassword, setnewpassword] = useState("")
     const [ConfPassword, setConfPassword] = useState("")
-
+    const server = import.meta.env.VITE_SERVER;
     const handlesubmit = async (e) => {
         e.preventDefault();
         if (newpassword === ConfPassword){
-            const { data } = await axios.put("https://bytestudy-yx6o.onrender.com/api/v3/fpass", {
+            const { data } = await axios.put(`${server}/api/v3/fpass`, {
 
             email: email,
 

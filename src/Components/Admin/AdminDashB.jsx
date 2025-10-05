@@ -32,20 +32,21 @@ export default function AdminDashB() {
     const handleHome = () => {
         setEnableHome(true)
     }
+    const server = import.meta.env.VITE_REACT_APP_SERVER_URL;
     const getdata = async () => {
-        const { data } = await axios.get("https://bytestudy-yx6o.onrender.com/api/v1/cnotes");
+        const { data } = await axios.get(`${server}/api/v1/cnotes`);
         setnotes(data)
         console.log(data)
 
-        const qpd = await axios.get("https://bytestudy-yx6o.onrender.com/api/v1/cqp")
+        const qpd = await axios.get(`${server}/api/v1/cqp`)
         setqp(qpd.data)
         console.log(qpd)
 
-        const tusers = await axios.get("https://bytestudy-yx6o.onrender.com/api/v1/cuser")
+        const tusers = await axios.get(`${server}/api/v1/cuser`)
         setusers(tusers.data)
 
 
-        const texp = await axios.get("https://bytestudy-yx6o.onrender.com/api/v1/cexp")
+        const texp = await axios.get(`${server}/api/v1/cexp`)
         setexp(texp.data)
         setLoader(false)
 
@@ -68,6 +69,7 @@ export default function AdminDashB() {
 
         } else {
             getdata();
+            setLoader(false)
         }
     }, [])
     return (

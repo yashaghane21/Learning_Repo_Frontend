@@ -13,7 +13,7 @@ export default function Experiments() {
 
     const fetchExps = async () => {
         try {
-            const response = await axios.get(`https://bytestudy-yx6o.onrender.com/api/v1/get-Exp/${subid.id}`);
+            const response = await axios.get(`${server}/api/v1/get-Exp/${subid.id}`);
             setExps(response.data);
             console.log(response.data);
             //momadd

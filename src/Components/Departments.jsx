@@ -7,12 +7,13 @@ import { Puff } from 'react-loader-spinner'
 
 export default function Departments() {
   const [departments, setDepartments] = useState([]);
+  let server=import.meta.env.VITE_SERVER
   const navigate = useNavigate();
   const [auth, setauth] = useAuth();
   const [loader, setLoader] = useState(false)
   const fetchDepartments = async () => {
     try {
-      const response = await axios.get("https://bytestudy-yx6o.onrender.com/api/v2/all-dep");
+      const response = await axios.get(`${server}/api/v2/all-dep`);
       setDepartments(response.data);
       console.log(response.data);
     } catch (error) {
