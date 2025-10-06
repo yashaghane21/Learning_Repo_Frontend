@@ -1,10 +1,11 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { Puff } from "react-loader-spinner";
+import { Puff } from "react-loader-spinner"
 export default function Semesters() {
     const id = useParams();
     const navigate=useNavigate();
+    const server = import.meta.env.VITE_SERVER;
     const [sem, setSem] = useState([]);
     const [loader,setLoader]=useState()
     const getSem = async () => {

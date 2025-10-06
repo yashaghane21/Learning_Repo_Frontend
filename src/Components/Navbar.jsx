@@ -23,7 +23,12 @@ const Navbar = () => {
     }
     return (
         <div className='flex justify-between items-center h-20 max-w-[1240px] mx-auto mt-0 px-2 text-black'>
-            <img src={img1} onClick={()=>navigate('/')} className='h-[30px] md:h-[40px] p-0 md:w-[15%] cursor-pointer ' />
+            {/* <img src={img1} onClick={()=>navigate('/')} className='h-[30px] md:h-[40px] p-0 md:w-[15%] cursor-pointer ' /> */}
+           <p className="text-2xl gap-x-3 font-bold">
+  <span className="text-black">Learning</span>
+  <span className="text-yellow-400">Repository</span>
+</p>
+
             <ul className='hidden md:flex'>
                 <Link className='p-4 hover:underline hover:underline-offset-4 decoration-yellow-400 cursor-pointer' to='/' >Home</Link>
                 <Link className='p-4 hover:underline hover:underline-offset-4 decoration-yellow-400 cursor-pointer' to='/About'>About</Link>

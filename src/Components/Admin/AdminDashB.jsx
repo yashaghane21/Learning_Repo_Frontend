@@ -32,7 +32,7 @@ export default function AdminDashB() {
     const handleHome = () => {
         setEnableHome(true)
     }
-    const server = import.meta.env.VITE_REACT_APP_SERVER_URL;
+    const server = import.meta.env.VITE_SERVER;
     const getdata = async () => {
         const { data } = await axios.get(`${server}/api/v1/cnotes`);
         setnotes(data)
@@ -78,7 +78,7 @@ export default function AdminDashB() {
             <div className="w-[100%] z-10 h-max py-2 max-xl:px-0 px-5 mr-0 bg-white drop-shadow-2xl">
                 
                 
-                <h1 onClick={()=> navigate('/')} className='w-full text-3xl font-bold mx-2 cursor-pointer'>ByteStudy</h1>
+                <h1 onClick={()=> navigate('/')} className='w-full text-3xl font-bold mx-2 cursor-pointer'>LearningRepository</h1>
                 <button onClick={handleLogOut} className="block max-md:hidden w-max px-4 text-lg h-8 rounded bg-yellow-300 hover:bg-[#ebeb5a] absolute right-0 top-0 mt-2 mx-8">
                     Logout
                 </button>

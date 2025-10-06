@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import img1 from '../Images/AboutImg.png'
+import img1 from '../Images/abt.png'
 import img2 from '../Images/AboutLogo.png'
 import { BsInstagram, BsGithub } from 'react-icons/bs'
 function About() {
@@ -11,7 +11,7 @@ function About() {
                 <div className='mt-10'>
                     <div className='flex flex-col md:flex-row'>
                         <div>
-                            <p className='text-xl max-md:text-md text-gray-700 md:mr-[20%] justify-between'><h1 className='text-3xl text-gray-900 font-bold pb-5'>Welcome to ByteStudy ,</h1>Your go-to online resource for TCET.
+                            <p className='text-xl max-md:text-md text-gray-700 md:mr-[20%] justify-between'><h1 className='text-3xl text-gray-900 font-bold pb-5'>Welcome to LearningRepository ,</h1>Your go-to online resource for TCET.
                                 We provide comprehensive study materials, including detailed notes, question papers, and interactive experiments to help you excel in your studies. Whether you're preparing for exams or looking to enhance your understanding of complex concepts, we've got you covered.
                             </p>
                             <button className='w-max mt-8 py-2 px-6 bg-yellow-300 hover:bg-yellow-400 rounded-md' onClick={() => navigate('/Departments')}>Explore More</button>
@@ -40,12 +40,12 @@ function About() {
                             <p>
 
                             </p>
-                            <div className='flex flex-row space-x-4 '>
+                            {/* <div className='flex flex-row space-x-4 '>
                                 <Link to='https://github.com/shivraj0124' className='py-4 cursor-pointer'>
                                     <BsGithub   size={20} />
                                 </Link>
                                 
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
@@ -59,12 +59,12 @@ function About() {
                             <p>
 
                             </p>
-                            <div className='flex flex-row space-x-4 '>
+                            {/* <div className='flex flex-row space-x-4 '>
                                 <Link to='https://github.com/yashaghane21' className='py-4 cursor-pointer'>
                                     <BsGithub size={20} />
                                 </Link>
                                
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
@@ -78,12 +78,12 @@ function About() {
                             <p>
 
                             </p>
-                            <div className='flex flex-row space-x-4 '>
+                            {/* <div className='flex flex-row space-x-4 '>
                                 <Link to='https://github.com/yashaghane21' className='py-4 cursor-pointer'>
                                     <BsGithub size={20} />
                                 </Link>
                               
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
@@ -97,12 +97,12 @@ function About() {
                             <p>
 
                             </p>
-                            <div className='flex flex-row space-x-4 '>
+                            {/* <div className='flex flex-row space-x-4 '>
                                 <Link to='https://github.com/yashaghane21' className='py-4 cursor-pointer'>
                                     <BsGithub size={20} />
                                 </Link>
                                
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     

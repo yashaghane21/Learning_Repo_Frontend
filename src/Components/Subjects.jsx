@@ -7,6 +7,7 @@ export default function Departments() {
     const navigate = useNavigate();
     const semid = useParams();
     const [loader,setLoader]=useState(false)
+    const server = import.meta.env.VITE_SERVER;
     const fetchsub = async () => {
         try {
             const response = await axios.get(`${server}/api/v1/get-sub/${semid.id}`);
