@@ -59,7 +59,7 @@ function App() {
                 <Route path="/Admin" element={<AdminLayout />}>
                 </Route>
               </Routes>
-              <Footer />
+              {/* <Footer /> */}
             </BrowserRouter>
             <ToastContainer />
           </Stprovider>

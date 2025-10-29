@@ -100,8 +100,8 @@ export default function AdminDashB() {
                         <Link onClick={handleHome} to='/Admin' className='hover:underline hover:underline-offset-4 decoration-yellow-400 cursor-pointer'>Home</Link>
 
                         <li className='mt-4 hover:underline hover:underline-offset-4 decoration-yellow-400 cursor-pointer' onClick={handleAddNew}>Notes</li>
-                        <li className='mt-4 hover:underline hover:underline-offset-4 decoration-yellow-400 cursor-pointer' onClick={handleAddNew}>QP</li>
-                        <li className='mt-4 hover:underline hover:underline-offset-4 decoration-yellow-400 cursor-pointer' onClick={handleAddNew}>Exp</li>
+                        <li className='mt-4 hover:underline hover:underline-offset-4 decoration-yellow-400 cursor-pointer' onClick={handleAddNew}>Question Paper</li>
+                        <li className='mt-4 hover:underline hover:underline-offset-4 decoration-yellow-400 cursor-pointer' onClick={handleAddNew}>Experiments</li>
                     </div>
                 </div>
                 
@@ -114,8 +114,8 @@ export default function AdminDashB() {
                     <div className='flex flex-col text-xl m-8 list-none' >
                         <Link onClick={handleHome} to='/Admin' className='hover:underline hover:underline-offset-4 decoration-yellow-400 cursor-pointer'>Home</Link>
                         <li className='mt-4 hover:underline hover:underline-offset-4 decoration-yellow-400 cursor-pointer' onClick={handleAddNew}>Notes</li>
-                        <li className='mt-4 hover:underline hover:underline-offset-4 decoration-yellow-400 cursor-pointer' onClick={handleAddNew}>QP</li>
-                        <li className='mt-4 hover:underline hover:underline-offset-4 decoration-yellow-400 cursor-pointer' onClick={handleAddNew}>Exp</li>
+                        <li className='mt-4 hover:underline hover:underline-offset-4 decoration-yellow-400 cursor-pointer' onClick={handleAddNew}>Question Paper</li>
+                        <li className='mt-4 hover:underline hover:underline-offset-4 decoration-yellow-400 cursor-pointer' onClick={handleAddNew}>Experiments</li>
                         <button onClick={handleLogOut} className="w-max mt-16 px-4 text-lg h-8 rounded bg-yellow-300 hover:bg-[#ebeb5a]">
                             Logout
                         </button>

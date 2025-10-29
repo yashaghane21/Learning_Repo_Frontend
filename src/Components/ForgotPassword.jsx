@@ -33,7 +33,7 @@ export default function ForgotPassword() {
     }
     return (
         <>
-            <div className="w-100 pt-28 bg-gray-200 flex justify-center px-5 lg:px-72 md:pb-52 max-md:pb-16" >
+            <div className="w-100 pt-28 bg-gray-200 flex justify-center px-5 lg:px-73 md:pb-52 max-md:pb-16" >
                 <div className="w-[100%] lg:w-[80%] flex md:flex-row max-md:flex-col-reverse p-3  max-md:pb-20 bg-white shadow-2xl rounded-md" >
                     <div className="w-[60%] max-md:w-[100%] h-auto text-center text-2xl font-semibold p-2 " >
                         <h1 className='font underline underline-offset-2 max-md:mt-5' >Forgot Password</h1>
